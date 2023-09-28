@@ -1,6 +1,7 @@
 import NetInfo from '@react-native-community/netinfo';
 import DeviceInfo from 'react-native-device-info';
 
+//Stores network connection information to display on screen
 export const getDeviceData = async (deviceInfo, setDeviceInfo) => {
   let deviceJSON = {};
   try {
@@ -32,9 +33,10 @@ export const getDeviceData = async (deviceInfo, setDeviceInfo) => {
     console.log('Trouble getting device info ', e);
   }
   setDeviceInfo(deviceJSON);
-  // setArr(Object.keys(deviceJSON));
 };
 
+
+//gets network connection type like Wi-Fi or Cellular
 export const getNetType = async () => {
   return (await NetInfo.fetch()).type;
 };

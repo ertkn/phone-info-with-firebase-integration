@@ -10,7 +10,11 @@ export async function logToFile(netInfoJSON, isLogging, isPushConfig) {
   await RNFS.write(path, JSON.stringify(netInfoJSON) + '\n', -1, 'utf8')
     .then(success => {
       console.log('NetInfoJSON --> ', netInfoJSON);
-      readFile(isPushConfig); //read Network LOG from log file
+
+      //reads locally stored data about network connection if Remote Config authorize, then post
+      if (isPushConfig) {
+        readFile(isPushConfig);
+      }
     })
     .catch(err => {
       console.log(err.message);
