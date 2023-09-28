@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "110528751293",
+    "project_id": "devicenetinfo",
+    "storage_bucket": "devicenetinfo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:110528751293:android:0fc151058e0c4989cef9d4",
+        "android_client_info": {
+          "package_name": "com.phoneinfoapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiimSt5J8tEgBr72KuyZX303yGyRpYSCM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
